@@ -1,0 +1,35 @@
+﻿<UserControl x:Class="UCCharacter"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:BlackJackApp="clr-namespace:BlackJackApp"
+             Width="240" Height="190"
+    RenderTransformOrigin="75,20">
+    <UserControl.Resources>
+        <Storyboard x:Key="stbdTurnEnd">
+            <DoubleAnimation BeginTime="00:00:00" Duration="00:00:00.2" To="0.4" Storyboard.TargetName="cardStack" Storyboard.TargetProperty="(UIElement.Opacity)" />
+        </Storyboard>
+        <Storyboard x:Key="stbdTurnStart">
+            <DoubleAnimation BeginTime="00:00:00" Duration="00:00:00.2" To="1" Storyboard.TargetName="cardStack" Storyboard.TargetProperty="(UIElement.Opacity)" />
+        </Storyboard>
+        <Storyboard x:Key="stbdCenterCards" />
+
+        <BlackJackApp:MultiplyConverter x:Key="multiplyConverter" />
+    </UserControl.Resources>
+    <DockPanel>
+        <Grid>
+            
+            <Canvas x:Name="container">
+                
+			    <Border x:Name="bdrOutcome" Canvas.Left="75" Canvas.Top="1" Padding="3" CornerRadius="3,3,3,3" Background="#FF5C0909">
+				    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Name="lblOutcome" Text="" FontWeight="Bold" Foreground="White" />
+			    </Border>
+                
+			    <TextBlock Visibility="Hidden" Canvas.Left="163" Canvas.Top="4" FontWeight="Normal" Height="16" Foreground="Lime" Name="lblCardCount" Text="0" TextAlignment="Right" Width="35" />
+    
+                <Grid Canvas.Left="75" Width="160" Height="165" ClipToBounds="False" Canvas.Top="20">
+                    <BlackJackApp:CardStacker x:Name="cardStack" CardWidth="72" CardHeight="96" ClipToBounds="False" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                </Grid>
+            </Canvas>
+         </Grid>
+    </DockPanel>
+</UserControl>

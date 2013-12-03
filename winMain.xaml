@@ -1,0 +1,85 @@
+﻿<Window x:Class="winMain"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Black Jack" Height="650" Width="960" x:Name="winMain" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" xmlns:BlackJackApp="clr-namespace:BlackJackApp">
+    <Window.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Background" >
+                <Setter.Value>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="0,1" >
+                        <GradientStop Color="#FFFFD190" Offset="0.35"/>
+                        <GradientStop Color="Orange" Offset="0.95"/>
+                        <GradientStop Color="#FFFFD190" Offset="1"/>
+                    </LinearGradientBrush>
+                </Setter.Value>
+            </Setter>
+
+        </Style>
+    </Window.Resources>
+        <DockPanel>
+        <Menu IsMainMenu="True" Height="26" DockPanel.Dock="Top" HorizontalAlignment="Stretch">
+            <MenuItem Header="File">
+                <MenuItem Header="Cheats">
+                    <MenuItem x:Name="menuCheatsSoft17"  Header="Always Deal Soft 17" IsCheckable="True" />
+                    <MenuItem x:Name="menuCheatsShowHole"  Header="Always Show Hole" IsCheckable="True" />
+					<MenuItem x:Name="menuCheatsBJAll"  Header="Deal BlackJacks to All" IsCheckable="True" />
+                    <MenuItem x:Name="menuShowDeck" Header="Show Deck" Click="menuShowDeck_Click" />
+                </MenuItem>
+                <Separator />                   
+                <MenuItem Header="Exit" x:Name="menuExit" Click="menuExit_Click" />
+            </MenuItem>
+            <MenuItem Header="Rules">
+                <MenuItem Header="Number of Decks" x:Name="menuNumberOfDecks">
+                    <MenuItem Header="1" IsCheckable="True" Click="NumberOfDecks_Click" IsChecked="True" />
+                    <MenuItem Header="2" IsCheckable="True" Click="NumberOfDecks_Click" IsChecked="False" />
+                    <MenuItem Header="4" IsCheckable="True" Click="NumberOfDecks_Click" IsChecked="False" />
+                    <MenuItem Header="6" IsCheckable="True" Click="NumberOfDecks_Click" IsChecked="False" />
+                    <MenuItem Header="8" IsCheckable="True" Click="NumberOfDecks_Click" IsChecked="False" />
+                </MenuItem>
+                <Separator/>
+                <MenuItem Header="Dealer Stands on Soft 17 (S17)" IsCheckable="True" IsChecked="False" />
+                <MenuItem Header="Dealer Hits on Soft 17 (H17)" IsCheckable="True" IsChecked="True" />
+                <Separator/>
+                <MenuItem Header="Double Down on Any 2 Cards" IsCheckable="True" IsChecked="True" />
+                <MenuItem Header="Double Down on 9, 10, 11 Only" IsCheckable="True" IsChecked="False" />
+                <MenuItem Header="Double Down on 10, 11 Only" IsCheckable="True" IsChecked="False" />
+                <Separator/>
+                <MenuItem Header="Double Down After Split is Allowed" IsCheckable="True" IsChecked="True" />
+                <MenuItem Header="No Double Down After Split" IsCheckable="True" IsChecked="False" />
+                <Separator/>
+                <MenuItem Header="No Surrender" IsCheckable="True" IsChecked="True" />
+                <MenuItem Header="Late Surrender" IsCheckable="True" IsChecked="False" />
+                <MenuItem Header="Early Surrender" IsCheckable="True" IsChecked="False" />
+            </MenuItem>
+            <MenuItem Header="Debug">
+                <MenuItem x:Name="menuDebugEnableMsgs" Click="menuDebugEnableMsgs_Click" Header="Show Debug Messages" IsCheckable="True" /> 
+            </MenuItem>
+        </Menu>
+        <Grid DockPanel.Dock="Bottom" Height="36" Background="#FF000000" VerticalAlignment="Bottom">
+            <TextBlock Margin="229,12,640,8" x:Name="lblBet" Text="Bet: $100" Foreground="#FFFFFFFF" FontWeight="Bold" FontSize="12" />
+            <TextBlock FontSize="12" FontWeight="Bold" Foreground="White" HorizontalAlignment="Right" Margin="0,12,71,8" x:Name="TextBlock1" Text="Shuffles:" Width="69" />
+            <TextBox HorizontalAlignment="Right" Margin="0,9,32,7" x:Name="txtNoOfShuffles" Width="51" FontSize="12" Text="500"/>
+            <CheckBox HorizontalAlignment="Right" Margin="0,12,169,8" x:Name="chkMute" Width="97" Foreground="White" FontSize="12" FontWeight="Bold" Content="Mute Sounds"/>
+            <ProgressBar Margin="299,11,0,8" x:Name="progressShuffle" HorizontalAlignment="Left" Width="99" />
+            <TextBlock FontSize="12" FontWeight="Bold" Foreground="White" HorizontalAlignment="Left" Margin="10,12,0,8" x:Name="lblWins" Text="Wins: 0" Width="58" />
+            <TextBlock FontSize="12" FontWeight="Bold" Foreground="White" Margin="73,12,800,8" x:Name="lblLosses" Text="Losses: 0" />
+            <TextBlock FontSize="12" FontWeight="Bold" Foreground="White" HorizontalAlignment="Left" Margin="148,12,0,8" x:Name="lblRatio" Text="Ratio: N/A" Width="78" />
+            <TextBlock FontSize="9" FontWeight="Normal" Foreground="White" Margin="411,12,418,8" x:Name="lblShuffle" />
+        </Grid>
+        <Grid DockPanel.Dock="Top" Background="{StaticResource brushBackground}">
+            
+            <BlackJackApp:AwesomeCanvas>
+                <BlackJackApp:UCCharacter x:Name="playerDealer" Canvas.Left="329" Canvas.Top="10" Height="190" Width="240" />
+                <BlackJackApp:UCCharacter x:Name="playerHuman" Canvas.Left="362" Canvas.Top="327" Height="190" Width="240" />
+                <BlackJackApp:UCCharacter x:Name="AIPlayer1" Canvas.Left="698" Canvas.Top="184" Height="190" Width="240" />
+                <BlackJackApp:UCCharacter x:Name="AIPlayer2" Canvas.Left="579" Canvas.Top="290" Height="190" Width="240" />
+                <BlackJackApp:UCCharacter x:Name="AIPlayer3"  Canvas.Left="164" Canvas.Top="298" Height="190" Width="240" />
+                <BlackJackApp:UCCharacter x:Name="AIPlayer4" Canvas.Left="-36" Canvas.Top="165" Height="190" Width="240" />
+            </BlackJackApp:AwesomeCanvas>
+         
+            <Button HorizontalAlignment="Left" Margin="8,0,0,3" x:Name="btnNewHand" VerticalAlignment="Bottom" Width="82.843" Height="33.277" Content="Deal Cards" Click="btnNewHand_Click"/>
+		    <Button HorizontalAlignment="Left" Margin="172.926,0,0,3" VerticalAlignment="Bottom" Width="79.083" Height="33.277" Content="Stand" x:Name="btnStand"/>
+		    <Button HorizontalAlignment="Left" Margin="94.843,0,0,3" VerticalAlignment="Bottom" Width="74.083" Height="33.277" Content="Hit Me" x:Name="btnHit"/>
+        </Grid>
+    </DockPanel>
+</Window>

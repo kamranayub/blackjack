@@ -1,0 +1,16 @@
+﻿<Window x:Class="winTest"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:BlackJackApp="clr-namespace:BlackJackApp"
+    Title="winTest" Height="300" Width="300" Name="Window1">
+    <DockPanel>
+        <StackPanel>
+            <Button Click="Button_Click">Add Card</Button>
+            <Grid x:Name="container" Background="ForestGreen">
+
+                <BlackJackApp:CardStacker HorizontalAlignment="Center" VerticalAlignment="Center" x:Name="cardHolder" />
+
+            </Grid>
+        </StackPanel>
+    </DockPanel>
+</Window>

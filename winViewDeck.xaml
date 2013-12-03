@@ -1,0 +1,18 @@
+﻿<Window x:Class="winViewDeck"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="View the Deck" Height="450" Width="300" Name="winViewDeck" WindowStartupLocation="CenterOwner">
+    <DockPanel>
+        <TextBlock x:Name="txtNumCards" DockPanel.Dock="Top" Padding="10,10,0,0" Text="Number of Cards: 0" /> 
+        <Border BorderBrush="DimGray" BorderThickness="1" Margin="10" >
+        <ScrollViewer VerticalScrollBarVisibility="Visible" VerticalContentAlignment="Top">
+            
+            <UniformGrid Name="gridCards" Margin="12">
+                <TextBlock Text="Once you deal, the new deck will be shown here." TextAlignment="Center" VerticalAlignment="Center" Padding="30" TextWrapping="Wrap" />
+            </UniformGrid>
+            
+        </ScrollViewer>
+            </Border>
+        
+    </DockPanel>
+</Window>

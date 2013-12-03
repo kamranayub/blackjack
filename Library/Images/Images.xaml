@@ -1,0 +1,71 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+	<ImageBrush x:Key="brushBackground" ImageSource="Background.png" />
+
+    <!-- Standard Cards -->
+    <ImageBrush x:Key="EndDeck" Stretch="Fill" ImageSource="cards/Deck1/EndDeck.png" />
+    <ImageBrush x:Key="1Clubs" Stretch="Fill" ImageSource="cards/Deck1/1Clubs.png"/>
+    <ImageBrush x:Key="1Diamonds" Stretch="Fill" ImageSource="cards/Deck1/1Diamonds.png"/>
+    <ImageBrush x:Key="1Hearts" Stretch="Fill" ImageSource="cards/Deck1/1Hearts.png"/>
+    <ImageBrush x:Key="1Spades" Stretch="Fill" ImageSource="cards/Deck1/1Spades.png"/>
+
+    <ImageBrush x:Key="2Clubs" Stretch="Fill" ImageSource="cards/Deck1/2Clubs.png"/>
+    <ImageBrush x:Key="2Diamonds" Stretch="Fill" ImageSource="cards/Deck1/2Diamonds.png"/>
+    <ImageBrush x:Key="2Hearts" Stretch="Fill" ImageSource="cards/Deck1/2Hearts.png"/>
+    <ImageBrush x:Key="2Spades" Stretch="Fill" ImageSource="cards/Deck1/2Spades.png"/>
+
+    <ImageBrush x:Key="3Clubs" Stretch="Fill" ImageSource="cards/Deck1/3Clubs.png"/>
+    <ImageBrush x:Key="3Diamonds" Stretch="Fill" ImageSource="cards/Deck1/3Diamonds.png"/>
+    <ImageBrush x:Key="3Hearts" Stretch="Fill" ImageSource="cards/Deck1/3Hearts.png"/>
+    <ImageBrush x:Key="3Spades" Stretch="Fill" ImageSource="cards/Deck1/3Spades.png"/>
+
+    <ImageBrush x:Key="4Clubs" Stretch="Fill" ImageSource="cards/Deck1/4Clubs.png"/>
+    <ImageBrush x:Key="4Diamonds" Stretch="Fill" ImageSource="cards/Deck1/4Diamonds.png"/>
+    <ImageBrush x:Key="4Hearts" Stretch="Fill" ImageSource="cards/Deck1/4Hearts.png"/>
+    <ImageBrush x:Key="4Spades" Stretch="Fill" ImageSource="cards/Deck1/4Spades.png"/>
+
+    <ImageBrush x:Key="5Clubs" Stretch="Fill" ImageSource="cards/Deck1/5Clubs.png"/>
+    <ImageBrush x:Key="5Diamonds" Stretch="Fill" ImageSource="cards/Deck1/5Diamonds.png"/>
+    <ImageBrush x:Key="5Hearts" Stretch="Fill" ImageSource="cards/Deck1/5Hearts.png"/>
+    <ImageBrush x:Key="5Spades" Stretch="Fill" ImageSource="cards/Deck1/5Spades.png"/>
+
+    <ImageBrush x:Key="6Clubs" Stretch="Fill" ImageSource="cards/Deck1/6Clubs.png"/>
+    <ImageBrush x:Key="6Diamonds" Stretch="Fill" ImageSource="cards/Deck1/6Diamonds.png"/>
+    <ImageBrush x:Key="6Hearts" Stretch="Fill" ImageSource="cards/Deck1/6Hearts.png"/>
+    <ImageBrush x:Key="6Spades" Stretch="Fill" ImageSource="cards/Deck1/6Spades.png"/>
+
+    <ImageBrush x:Key="7Clubs" Stretch="Fill" ImageSource="cards/Deck1/7Clubs.png"/>
+    <ImageBrush x:Key="7Diamonds" Stretch="Fill" ImageSource="cards/Deck1/7Diamonds.png"/>
+    <ImageBrush x:Key="7Hearts" Stretch="Fill" ImageSource="cards/Deck1/7Hearts.png"/>
+    <ImageBrush x:Key="7Spades" Stretch="Fill" ImageSource="cards/Deck1/7Spades.png"/>
+
+    <ImageBrush x:Key="8Clubs" Stretch="Fill" ImageSource="cards/Deck1/8Clubs.png"/>
+    <ImageBrush x:Key="8Diamonds" Stretch="Fill" ImageSource="cards/Deck1/8Diamonds.png"/>
+    <ImageBrush x:Key="8Hearts" Stretch="Fill" ImageSource="cards/Deck1/8Hearts.png"/>
+    <ImageBrush x:Key="8Spades" Stretch="Fill" ImageSource="cards/Deck1/8Spades.png"/>
+
+    <ImageBrush x:Key="9Clubs" Stretch="Fill" ImageSource="cards/Deck1/9Clubs.png"/>
+    <ImageBrush x:Key="9Diamonds" Stretch="Fill" ImageSource="cards/Deck1/9Diamonds.png"/>
+    <ImageBrush x:Key="9Hearts" Stretch="Fill" ImageSource="cards/Deck1/9Hearts.png"/>
+    <ImageBrush x:Key="9Spades" Stretch="Fill" ImageSource="cards/Deck1/9Spades.png"/>
+
+    <ImageBrush x:Key="10Clubs" Stretch="Fill" ImageSource="cards/Deck1/10Clubs.png"/>
+    <ImageBrush x:Key="10Diamonds" Stretch="Fill" ImageSource="cards/Deck1/10Diamonds.png"/>
+    <ImageBrush x:Key="10Hearts" Stretch="Fill" ImageSource="cards/Deck1/10Hearts.png"/>
+    <ImageBrush x:Key="10Spades" Stretch="Fill" ImageSource="cards/Deck1/10Spades.png"/>
+
+    <ImageBrush x:Key="11Clubs" Stretch="Fill" ImageSource="cards/Deck1/11Clubs.png"/>
+    <ImageBrush x:Key="11Diamonds" Stretch="Fill" ImageSource="cards/Deck1/11Diamonds.png"/>
+    <ImageBrush x:Key="11Hearts" Stretch="Fill" ImageSource="cards/Deck1/11Hearts.png"/>
+    <ImageBrush x:Key="11Spades" Stretch="Fill" ImageSource="cards/Deck1/11Spades.png"/>
+
+    <ImageBrush x:Key="12Clubs" Stretch="Fill" ImageSource="cards/Deck1/12Clubs.png"/>
+    <ImageBrush x:Key="12Diamonds" Stretch="Fill" ImageSource="cards/Deck1/12Diamonds.png"/>
+    <ImageBrush x:Key="12Hearts" Stretch="Fill" ImageSource="cards/Deck1/12Hearts.png"/>
+    <ImageBrush x:Key="12Spades" Stretch="Fill" ImageSource="cards/Deck1/12Spades.png"/>
+
+    <ImageBrush x:Key="13Clubs" Stretch="Fill" ImageSource="cards/Deck1/13Clubs.png"/>
+    <ImageBrush x:Key="13Diamonds" Stretch="Fill" ImageSource="cards/Deck1/13Diamonds.png"/>
+    <ImageBrush x:Key="13Hearts" Stretch="Fill" ImageSource="cards/Deck1/13Hearts.png"/>
+    <ImageBrush x:Key="13Spades" Stretch="Fill" ImageSource="cards/Deck1/13Spades.png"/>
+</ResourceDictionary>
