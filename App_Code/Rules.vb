@@ -30,7 +30,7 @@ Public Class Rules
             Return _mNumDecks
         End Get
         Set(ByVal value As Integer)
-            If value = 1 Or value = 2 Or value = 4 Or value = 6 Or value = 6 Then
+            If value = 1 Or value = 2 Or value = 4 Or value = 6 Then
                 _mNumDecks = value
             Else
                 ' Default is 4 decks
