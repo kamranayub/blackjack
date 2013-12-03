@@ -3,11 +3,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "WPFBlackJack", "WPFBlackJack.vbproj", "{306D6CD6-8B0A-4252-86BB-537FA1BB5A83}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "BlackJack", "src\UI\BlackJack.vbproj", "{306D6CD6-8B0A-4252-86BB-537FA1BB5A83}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{36155BF0-FB63-4F63-8A1E-7D263A189821}"
 	ProjectSection(SolutionItems) = preProject
 		README.md = README.md
+		Screenshot.png = Screenshot.png
 	EndProjectSection
 EndProject
 Global
