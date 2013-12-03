@@ -1,4 +1,4 @@
-# WPF Blackjack Sample Game
+# Blackjack Sample Game
 
 ![Screenshot](Screenshot.png)
 
@@ -11,12 +11,17 @@ Feel free to learn from and dissect the code. This was written when WPF was cool
 Some of the code logic around decks and card counting was taken from other open source Blackjack games
 back in the day (I'm sure they're still around) but I'm not sure if they all work like they're supposed to.
 
+Most of the code is well-commented but mainly it consists of a `BlackJack` game singleton and lots of events
+that actors subscribe to (Players). The decks are dealt using a `Shoe` which contains a `Card` collection.
+There are several deck strategies and card counting algorithms, though I don't think they're fully functional.
+There's also a `Rules` object that contains the game rules that can be adjusted through the settings menu.
+
 ## TODO
 
 - It would be neat to turn this into a Windows 8 app + C#
 - If someone can implement better AI and deck dealing, be my guest
 - Implement the status bar area
-- Implement betting
+- Implement betting, double-down, and other Blackjack things
 - Implement MVVM
 
 ## License
